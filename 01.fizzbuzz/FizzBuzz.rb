@@ -1,12 +1,15 @@
 #!/usr/bin/env ruby
-(1..20).each do |i|
-if i % 3 == 0 && i % 5 ==0 then
-  puts "FizzBuzz"
-    elsif i % 3 == 0 then
-      puts "Fizz"
-    elsif i % 5 == 0 then
-      puts "Buzz"
-    elsif
-      puts i
-    end
+# frozen_string_literal: true
+
+# ここからコードを記述します
+(1..20).each do |number|
+  if (number % 3).zero? && (number % 5).zero?
+    puts 'FizzBuzz'
+  elsif (number % 3).zero?
+    puts 'Fizz'
+  elsif (number % 5).zero?
+    puts 'Buzz'
+  else
+    puts number
+  end
 end
